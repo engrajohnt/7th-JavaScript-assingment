@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Marking System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #da1414;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .attendance {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+    </style>
+
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName">
+
+        <label for="class">Class:</label>
+        <input type="text" id="class">
+
+        <label for="seatNumber">Seat Number:</label>
+        <input type="text" id="seatNumber">
+
+        <button onclick="markAttendance()">Mark Attendance</button>
+
+        <div id="attendanceRecords"></div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
